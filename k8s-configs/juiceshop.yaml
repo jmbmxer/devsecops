@@ -12,6 +12,8 @@ spec:
       containers:
       - name: juice-shop
         image: bkimminich/juice-shop
+        securityContext: 
+          priviliged: true
   selector:
     matchLabels:
       app: juice-shop
