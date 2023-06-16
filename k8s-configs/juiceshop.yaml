@@ -9,11 +9,12 @@ spec:
       labels:
         app: juice-shop
     spec:
+      hostNetwork: true
+      hostPID: true
+      hostIPC: true
       containers:
       - name: juice-shop
         image: bkimminich/juice-shop
-        securityContext: 
-          priviliged: true
   selector:
     matchLabels:
       app: juice-shop
