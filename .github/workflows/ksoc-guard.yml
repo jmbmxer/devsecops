@@ -14,3 +14,4 @@ jobs:
         uses: ksoclabs/guard-action@v0.0.10
         with:
           policy_dir: /policies
+          ignored_paths: /juiceshop-app
